@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 
-const Counter = () => {
+const Counter = ({ initial, max }) => {
 
-    const [counter, setCounter] = useState(0);
+    const [result, setResult] = useState(initial);
 
-    const updateCounter = () => setCounter(counter + 1);
+    const countUp = () => setResult(
+        result >= max ? max : result + 1
+    );
+    const countDown = () => setResult(
+        result <= 0 ? 0 : result - 1
+    );
 
-    return <p onClick={updateCounter}>{counter}</p>;
-
+    return (
+        <>
+            <p>{result}</p>
+            <button onClick={countUp}>+</button>
+            <button onClick={countDown}>-</button>
+        </>
+    )
 }
 
 export default Counter;
