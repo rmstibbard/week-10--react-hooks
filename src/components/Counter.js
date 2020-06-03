@@ -7,6 +7,7 @@ const Counter = ({ initial, max }) => {
     const countUp = () => setResult(
         result >= max ? max : result + 1
     );
+
     const countDown = () => setResult(
         result <= 0 ? 0 : result - 1
     );

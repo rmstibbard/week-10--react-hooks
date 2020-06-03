@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const ToggleText = ({ initial, alternate }) => {
 
     const [isInitial, setInitial] = useState(true);
+
     const toggle = () => setInitial(!isInitial);
 
     return (
