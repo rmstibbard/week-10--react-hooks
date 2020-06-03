@@ -3,7 +3,7 @@ import './App.css';
 import Clicked from './components/Clicked';
 import Counter from './components/Counter';
 import Square from './components/Square';
-
+import ToggleText from './components/ToggleText';
 
 function App() {
   return (
@@ -17,6 +17,9 @@ function App() {
 
       <h2>Square</h2>
       <Square colour="hotpink" />
+
+      <h2>ToggleText</h2>
+      <ToggleText initial="Hello" alternate="World" />
 
     </>
   );
