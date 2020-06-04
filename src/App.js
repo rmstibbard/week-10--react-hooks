@@ -4,6 +4,7 @@ import Clicked from './components/Clicked';
 import Counter from './components/Counter';
 import Square from './components/Square';
 import ToggleText from './components/ToggleText';
+import StepCounter from './components/StepCounter';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
 
       <h2>Counter </h2>
       <Counter initial={50} max={100} />
+
+      <h2>StepCounter</h2>
+      <StepCounter max={100} step={5} />
     </>
   );
 }
