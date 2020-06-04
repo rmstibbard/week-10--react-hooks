@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.catch-me {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 1.5rem;
+}

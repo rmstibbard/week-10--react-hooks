@@ -5,6 +5,7 @@ import Counter from './components/Counter';
 import Square from './components/Square';
 import ToggleText from './components/ToggleText';
 import StepCounter from './components/StepCounter';
+import CatchMeIfYouCan from './components/CatchMeIfYouCan';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
 
       <h2>StepCounter</h2>
       <StepCounter max={100} step={5} />
+
+      <h2>Catch Me If You Can!</h2>
+      <CatchMeIfYouCan jump={100} />
     </>
   );
 }
