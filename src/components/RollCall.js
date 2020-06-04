@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 
-const CatchMeIfYouCan = ({ jump }) => {
+const RollCall = ({ names }) => {
 
     const [pos, setPos] = useState(0);
 
@@ -16,4 +16,4 @@ const CatchMeIfYouCan = ({ jump }) => {
     );
 }
 
-export default CatchMeIfYouCan;
+export default RollCall;

@@ -6,10 +6,12 @@ import Square from './components/Square';
 import ToggleText from './components/ToggleText';
 import StepCounter from './components/StepCounter';
 import CatchMeIfYouCan from './components/CatchMeIfYouCan';
+import RollCall from './components/RollCall';
 
 function App() {
   return (
     <>
+
       <h1>Hooks</h1>
 
       <h2>Clicked</h2>
@@ -29,6 +31,12 @@ function App() {
 
       <h2>Catch Me If You Can!</h2>
       <CatchMeIfYouCan jump={100} />
+
+      <h2>Rollcall</h2>
+      <RollCall names={
+        ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]
+      } />
+
     </>
   );
 }
