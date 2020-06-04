@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const Square = ({ colour }) => {
 
-    const [isGreen, setIsGreen] = useState(true);
+    const [isDefaultColour, setIsDefaultColour] = useState(true);
 
-    const changeColour = () => setIsGreen(!isGreen);
+    const changeColour = () => setIsDefaultColour(!isDefaultColour);
 
-    const backgroundColour = isGreen ? "green" : colour;
+    const backgroundColour = isDefaultColour ? "green" : colour;
 
     return (
         <div
