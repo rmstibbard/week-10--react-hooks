@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 const RollCall = ({ names }) => {
 
-    const [pos, setPos] = useState(0);
+    const [nameIndex, setNameIndex] = useState(0);
 
-    const click = () => setPos(pos + jump);
+    const click = () => {
+        setNameIndex((nameIndex + 1) % names.length);
+    }
 
     return (
-        <button
-            style={{ top: pos + "px" }}
-            onClick={click}
-            className="catch-me">
-            Catch Me If You Can!
-        </button>
-    );
+        <>
+            <button onClick={click}>Next</button >
+            <p>{names[nameIndex]}</p>
+        </>
+    )
 }
 
 export default RollCall;
