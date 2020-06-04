@@ -7,6 +7,7 @@ import ToggleText from './components/ToggleText';
 import StepCounter from './components/StepCounter';
 import CatchMeIfYouCan from './components/CatchMeIfYouCan';
 import RollCall from './components/RollCall';
+import PasswordStrength from './components/PasswordStrength';
 
 function App() {
   return (
@@ -36,6 +37,12 @@ function App() {
       <RollCall names={
         ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]
       } />
+
+      <h2>Password Strength</h2>
+      <PasswordStrength />
+
+
+      <br /><br /><br /><br /><br />
 
     </>
   );
